@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+a { color: inherit; text-decoration: none;} 
+
+.navbar {
+    background-color: $mainBlack;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr; //this does not affect the nav-link elements
+}
+
+.nav-links {
+    align-self: center;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+
+.nav-link {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: $mainGrey;
+    transition: all 0.3s all;
+    &:hover {
+        color:$mainGreen;
+    }
+}
+
+.active {
+    color: $mainGreen;
+}
